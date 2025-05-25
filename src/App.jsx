@@ -50,19 +50,22 @@ function FlashCards() {
   }
 
   return (
-    <div className="flashcards">
-      {questions.map((question) => (
-        <div
-          key={question.id}
-          onClick={() => handleClick(question.id)}
-          className={question.id === selectedId ? 'selected' : ''}
-        >
-          <p>
-            {question.id === selectedId ? question.answer : question.question}
-          </p>
-        </div>
-      ))}
-    </div>
+    <>
+      <h1>To Show Cub 🧡</h1>
+      <div className="flashcards">
+        {questions.map((question) => (
+          <div
+            key={question.id}
+            onClick={() => handleClick(question.id)}
+            className={question.id === selectedId ? 'selected' : ''}
+          >
+            <p>
+              {question.id === selectedId ? question.answer : question.question}
+            </p>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
