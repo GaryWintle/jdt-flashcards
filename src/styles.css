@@ -21,7 +21,7 @@ body {
 
 .flashcards div {
   font-weight: 600;
-  font-size: clamp(1.8rem, 4vw, 3.4rem);
+  font-size: clamp(3.2rem, 4vw, 3.4rem);
   border: none;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -90,8 +90,8 @@ div.selected:hover {
 
   .flashcards {
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 10px 0;
+    gap: 24px;
+    padding: 32px 32px;
   }
 
   .flashcards div {
